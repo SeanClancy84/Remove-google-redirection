@@ -15,7 +15,7 @@
 // @include        http://ipv6.google.com/
 // @include        http://ipv6.google.com/search*
 // @updateURL      https://github.com/SeanClancy84/Remove-google-redirection/raw/main/remove-google-redirection.user.js
-// @icon           https://github.com/dangoakachan/Remove-Google-Redirection/raw/master/extension/firefox/icon.png
+// @icon           https://github.com/SeanClancy84/Remove-google-redirection/raw/main/favicon.png
 // @run-at         document-end
 // ==/UserScript==
 
