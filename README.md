@@ -1,5 +1,6 @@
 # Remove-google-redirection
-Remove-google-redirection, for tampermonkey
+Remove-google-redirection, for tampermonkey  
+use with https://www.tampermonkey.net/
 
 Before
 ```
