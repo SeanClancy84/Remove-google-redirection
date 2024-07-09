@@ -14,7 +14,7 @@
 // @include        https://encrypted.google.com/webhp?hl=*
 // @include        http://ipv6.google.com/
 // @include        http://ipv6.google.com/search*
-// @updateURL      https://github.com/SeanClancy84/Remove-google-redirection/raw/main/remove-google-redirection.user.js
+// @updateURL      https://github.com/SeanClancy84/Remove-google-redirection/raw/main/remove-google-redirection-lite.user.js
 // @icon           https://github.com/SeanClancy84/Remove-google-redirection/raw/main/favicon.png
 // @run-at         document-end
 // ==/UserScript==
