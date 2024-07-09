@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id             remove-google-redirection
 // @name           Remove Google Redirection
-// @namespace      http://kodango.com
+// @namespace      https://github.com/SeanClancy84/Remove-google-redirection
 // @description    Prohibit click-tracking, and prevent url redirection when clicks on the result links in Google search page.
 // @version        1.1.0
 // @include        http*://www.google.*/
@@ -108,6 +108,23 @@
 
             if (a && a.tagName == 'A') {
                 console.log("Click link detected:", a.href);
+                cleanTheLink(a);
+
+                // Prevent default and redirect to the cleaned link
+                event.preventDefault();
+                //window.location.href = a.href; //open search in current window
+                window.open(a.href, '_blank'); //open search in new window
+            }
+        }, true);
+
+        document.addEventListener('contextmenu', function (event) {
+            var a = event.target;
+
+            while (a && a.tagName != 'A')
+                a = a.parentNode;
+
+            if (a && a.tagName == 'A') {
+                console.log("Contextmenu link detected:", a.href);
                 cleanTheLink(a);
             }
         }, true);
